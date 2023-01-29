@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_final_result"
+    tools:context=".FinalResultActivity">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/result_text_size"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        tools:text="@string/result"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/trophy_bronze" />
+
+    <TextView
+        android:id="@+id/tv_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/congratulations"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/result_text_size"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textView_textSize"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/result_text_size"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:text="@string/finish"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/button_textSize"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/result_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>

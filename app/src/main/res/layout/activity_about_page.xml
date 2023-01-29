@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_background"
+    android:orientation="vertical"
+    tools:context=".AboutPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/about_string"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:paddingTop="@dimen/linear_layout_padding_top"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:weightSum="8"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_music"
+            android:layout_width="@dimen/button_layout_width"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/start"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_layout_margin"
+            android:textColor="@android:color/black"
+            android:layout_height="@dimen/button_layout_height" />
+
+        <Button
+            android:id="@+id/stop_music"
+            android:layout_width="@dimen/button_layout_width"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/stop"
+            android:layout_margin="@dimen/button_layout_margin"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:layout_height="@dimen/button_layout_height" />
+
+    </LinearLayout>
+</LinearLayout>

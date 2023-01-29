@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="projekt_android">PROJEKT ANDROID</string>
+    <string name="username">Username</string>
+    <string name="start">Start</string>
+    <string name="please_enter_you_username">Please enter you username</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_connect_to_the_internet">Pleas connect to the internet</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="go_to_next_question">GO TO NEXT QUESTION</string>
+    <string name="finish">FINISH</string>
+    <string name="submit">SUBMIT</string>>
+    <string name="result">Result</string>
+    <string name="welcome">Welcome</string>
+    <string name="text_label_1">About</string>
+    <string name="text_label_2">Highscore</string>
+    <string name="about_string">This app was made for project purposes only. And shouldn\'t be taken seriously!</string>
+    <string name="stop">STOP</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="image_description">image</string>
+    <string name="text_view_progressText">0/10</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:theme="@android:style/Theme.Holo.NoActionBar"
+    android:fillViewport="true"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/question_page_padding">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_question"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_questioncard" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/image_question_width"
+            android:layout_height="@dimen/image_question_height"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:contentDescription="@string/image_description" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="@dimen/progressBar_minHeight"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_question"
+                android:gravity="center"
+                android:padding="@dimen/textView_padding"
+                android:textColor="@color/textColorLightGray"
+                android:textSize="@dimen/textSize_progress"
+                tools:text="@string/text_view_progressText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/answer_text_margin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/answerPadding"
+            android:textColor="@color/answerTextColor"
+            android:textSize="@dimen/answer_textSize"
+            tools:text="Answer a" />
+
+        <TextView
+            android:id="@+id/tv_answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/answer_text_margin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/answerPadding"
+            android:textColor="@color/answerTextColor"
+            android:textSize="@dimen/answer_textSize"
+            tools:text="Answer b" />
+
+        <TextView
+            android:id="@+id/tv_answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/answer_text_margin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/answerPadding"
+            android:textColor="@color/answerTextColor"
+            android:textSize="@dimen/answer_textSize"
+            tools:text="Answer c" />
+
+        <TextView
+            android:id="@+id/tv_answer_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/answer_text_margin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/answerPadding"
+            android:textColor="@color/answerTextColor"
+            android:textSize="@dimen/answer_textSize"
+            tools:text="Answer d" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_layout_margin_submit"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/submitButton_textSize"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
